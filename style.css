@@ -67,6 +67,7 @@ img {
     justify-content: center;
     background-image: url(./img/hero.png);
     background-size: cover;
+    background-position: center;
     padding: 96px 40px;
     position: relative;
     margin-top: 80px;
@@ -104,7 +105,7 @@ img {
     font-size: 64px;
     line-height: 1;
     font-family: var(--font-family-heading);
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.05em;
 }
 
 .hero-main-copy-accent {
