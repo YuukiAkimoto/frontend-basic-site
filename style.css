@@ -133,11 +133,15 @@ img {
   background-color: var(--color-background-black);
   display: flex;
   justify-content: center;
+  padding: 80px 0;
 }
 
 .about-container {
   max-width: 880px;
-  padding: 80px 40px;
+  padding:0px 40px;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-main-copy {
@@ -146,8 +150,8 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-white);
   margin: 0;
-  padding-bottom: 1em;
   text-align: center;
+  gap: 40px;
 }
 
 .about-main-copy-accent-red {
@@ -218,6 +222,15 @@ img {
 .courses-container {
   max-width: 880px;
   padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.courses-card-wrapper {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .courses-main-copy {
@@ -227,21 +240,19 @@ img {
   color: var(--color-white);
   margin: 0;
   text-align: center;
-  margin-bottom: 40px;
   font-weight: 400;
 }
 
 .courses-card {
   display: flex;
-  margin-bottom: 20px;
   filter: drop-shadow(4px 4px 0 var(--color-accent-red));
   height: 150px;
   background-color: var(--color-accent-yellow);
+  transition: 0.3s;
 }
 
 .courses-card:hover {
   filter: drop-shadow(10px 10px 0 var(--color-accent-red));
-  transition: 0.3s;
   background-color: var(--color-course-hover-yellow);
 }
 
@@ -337,7 +348,6 @@ img {
   padding: 10px 40px;
   height: 60px;
   display: flex;
-  margin-top: 40px;
   align-items: center;
   filter: drop-shadow(4px 4px 0 var(--color-accent-yellow));
 }
@@ -365,11 +375,13 @@ img {
 
 @media (max-width: 750px) {
   .courses {
-    padding-top: 0;
-    padding-bottom: 40px;
+    padding: 40px 0;
   }
   .courses-container {
     padding: 0px 20px;
+  }
+  .courses-main-copy,.courses-card-image-box::after {
+    font-size: 24px;
   }
   .courses-card {
     display: block;
@@ -388,6 +400,9 @@ img {
   }
   .courses-card-right {
     font-size: 12px;
+  }
+  .courses-button {
+    height: 40px;
   }
   .courses-button-text {
     font-size: 14px;
