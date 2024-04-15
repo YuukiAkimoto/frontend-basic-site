@@ -138,7 +138,7 @@ img {
 
 .about-container {
   max-width: 880px;
-  padding:0px 40px;
+  padding: 0px 40px;
   gap: 40px;
   display: flex;
   flex-direction: column;
@@ -372,7 +372,6 @@ img {
   height: 40px;
   display: flex;
 }
-
 @media (max-width: 750px) {
   .courses {
     padding: 40px 0;
@@ -380,7 +379,8 @@ img {
   .courses-container {
     padding: 0px 20px;
   }
-  .courses-main-copy,.courses-card-image-box::after {
+  .courses-main-copy,
+  .courses-card-image-box::after {
     font-size: 24px;
   }
   .courses-card {
